@@ -1,0 +1,25 @@
+Welcome {{u.username}} 
+
+<button (click)='toggleRestaurants()'>Show Restaurants: </button>
+
+<div *ngFor="let r of restaurants">{{r.name}}</div>
+<table>
+    <th>id</th>
+    <th>name</th>
+    <th>street address</th>
+    <th>reviews</th>
+    <tr>
+        <td>
+            <div *ngFor="let r of restaurants">{{r.restaruantId}}</div>
+        </td>
+        <td>
+            <div *ngFor="let r of restaurants">{{r.name}}</div>
+        </td>
+        <td>
+            <div *ngFor="let r of restaurants">{{r.streetAddress}}</div>
+        </td>
+        <td>
+            <div *ngFor="let r of restaurants">{{r.reviews}}</div>
+        </td>
+    </tr>
+</table>
